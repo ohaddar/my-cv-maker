@@ -1,4 +1,10 @@
+import { Grid } from "@mui/material";
+
 const PersonalExp = () => {
-  return;
+  return (
+    <div>
+      <Grid></Grid>
+    </div>
+  );
 };
 export default PersonalExp;

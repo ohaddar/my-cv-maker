@@ -7,6 +7,7 @@ import {
   OutlinedInput,
 } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface FormValues {
   firstName: string;
@@ -60,6 +61,7 @@ const PersonalData = () => {
           flexWrap: "wrap",
           flexDirection: "column",
           gap: "16px",
+          alignItems: "center",
         }}
       >
         <Box
@@ -286,7 +288,13 @@ const PersonalData = () => {
             />
           </FormControl>
         </Box>
-        <Button variant="contained" size="medium" type="submit">
+        <Button
+          variant="contained"
+          size="medium"
+          type="submit"
+          component={Link}
+          to="/PersonalExp"
+        >
           Confirm
         </Button>
       </Container>
