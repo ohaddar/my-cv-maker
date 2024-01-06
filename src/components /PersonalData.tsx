@@ -48,6 +48,7 @@ const PersonalData = () => {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     setFormValues(formValues);
+    console.log(e);
     console.log(formValues);
   };
 
@@ -72,7 +73,7 @@ const PersonalData = () => {
           <FormControl variant="outlined">
             <InputLabel htmlFor="component-outlined">First Name</InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="name"
               value={formValues.firstName}
               onChange={(e) =>
                 setFormValues({ ...formValues, firstName: e.target.value })
@@ -82,7 +83,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Last Name </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="lastname"
               label="Family Name"
               value={formValues.lastName}
               onChange={(e) =>
@@ -99,7 +100,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Email </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="email"
               type="email"
               label="Email"
               value={formValues.email}
@@ -111,7 +112,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Phone Number </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="number"
               label="Phone Number "
               value={formValues.phoneNumber}
               onChange={(e) =>
@@ -131,7 +132,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Adresse </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="adresse"
               label="Adresse"
               value={formValues.address}
               onChange={(e) =>
@@ -142,7 +143,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Postal Code </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="postalCode"
               label="Postal Code "
               value={formValues.postalCode}
               onChange={(e) =>
@@ -156,7 +157,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">City </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="city"
               label="City"
               value={formValues.city}
               onChange={(e) =>
@@ -173,7 +174,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Birthday </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="birthDay"
               label="Birthday"
               value={formValues.birthday}
               onChange={(e) =>
@@ -187,7 +188,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Birthcity </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="birthCity"
               label="Birthcity"
               value={formValues.birthCity}
               onChange={(e) =>
@@ -206,7 +207,7 @@ const PersonalData = () => {
               Driving license{" "}
             </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="Drive"
               label="Driving license"
               value={formValues.drivinglicense}
               onChange={(e) =>
@@ -223,7 +224,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Sex </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="sex"
               label="Sex"
               value={formValues.sex}
               onChange={(e) =>
@@ -234,7 +235,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Nationality </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="nation"
               label="Nationality"
               value={formValues.nationality}
               onChange={(e) =>
@@ -248,7 +249,7 @@ const PersonalData = () => {
               Marital status{" "}
             </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="status"
               label="Marital status"
               value={formValues.maritalStatus}
               onChange={(e) =>
@@ -265,7 +266,7 @@ const PersonalData = () => {
           <FormControl>
             <InputLabel htmlFor="component-outlined">Linkedin </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="linkedin"
               label="Linkedin"
               value={formValues.linkedin}
               onChange={(e) =>
@@ -279,7 +280,7 @@ const PersonalData = () => {
               Internet Site{" "}
             </InputLabel>
             <OutlinedInput
-              id="component-outlined"
+              id="internetSite"
               label=" Internet Site "
               value={formValues.internetSite}
               onChange={(e) =>
