@@ -86,7 +86,7 @@ export default function SignUp() {
                   autoFocus
                   {...register("firstName", {
                     required: "First Name is required",
-                    pattern: /^[A-Za-z]+$/,
+                    pattern: /^[A-Za-z].{2,}$/,
                   })}
                   error={!!errors.firstName}
                   helperText={errors.firstName?.message}
@@ -101,7 +101,7 @@ export default function SignUp() {
                   autoComplete="family-name"
                   {...register("lastName", {
                     required: "Last Name is required",
-                    pattern: /^[A-Za-z]+$/,
+                    pattern: /^[A-Za-z].{2,}$/,
                   })}
                   error={!!errors.lastName}
                   helperText={errors.lastName?.message}
@@ -167,3 +167,5 @@ export default function SignUp() {
     </ThemeProvider>
   );
 }
+/* component={Link}
+              to="/PersonalData"*/
