@@ -26,6 +26,7 @@ const PrincipalPage = () => {
             to="/SignUp"
             sx={{ mt: 3, mb: 2, width: "15%", height: "50px" }}
             variant="contained"
+            style={{ backgroundColor: "purple" }}
           >
             Create CV
           </Button>
